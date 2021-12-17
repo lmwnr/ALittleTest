@@ -1,3 +1,5 @@
 .vscode
 .idea
+conf.json
 
+*test.go

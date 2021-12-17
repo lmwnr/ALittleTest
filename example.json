@@ -1,0 +1,34 @@
+{
+    "events": [
+        {
+            "ts": 1639529866675,
+            "event": "gameApiCall",
+            "userId": "{gl}{103531207971243760425}",
+            "loginAt": 1639529381,
+            "api": "GET:/v1/game/scoretoken/?type=priced_room&roomId=e4e4e94a4410f7c8f5ed01a3dc9e22b4_new_c6sjo04sqf5tan39t00g_n",
+            "x-forwarded-for": "223.231.204.139, 130.176.16.67, 172.32.41.37",
+            "x-client-id": "28705421-a3bf-4976-bc1a-c36ffa1df17a46823305",
+            "x-av-id": "3736fa4c-66cb-4872-834d-e2bd709e3540",
+            "x-an-id": "e9e343adcad138d7",
+            "x-mx-timestamp": "1639529866116",
+            "x-timestamp": "1639529866422",
+            "x-last-update-time": "1639226086110",
+            "x-first-install-time": "1623552137313"
+        },
+        {
+            "ts": 1639529867310,
+            "event": "gameApiCall",
+            "userId": "{pl}{919448535107_main}",
+            "loginAt": 1635130389,
+            "api": "POST:/v1/game/score",
+            "x-forwarded-for": "2409:4071:219b:b1e7::1f5e:78ac, 52.46.49.139, 172.32.41.171",
+            "x-client-id": "17c87ef9-9431-4dce-9d7d-cc0a1176137e440163982",
+            "x-av-id": "f313c1e6-e5d0-4954-8a4f-d70c8faa13d2",
+            "x-an-id": "a7f81db44ac36aee",
+            "x-mx-timestamp": "1639529866096",
+            "x-timestamp": "1639529867118",
+            "x-last-update-time": "1638256320520",
+            "x-first-install-time": "1634684942900"
+        }
+    ]
+}
