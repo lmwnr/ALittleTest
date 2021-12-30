@@ -1,16 +1,10 @@
 package agent
 
 import (
-	"MXAntiCheatOffline/conf"
 	"bytes"
-	"io"
-	"net/http"
-	"time"
-
 	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
+	"io"
 )
 
 var (
@@ -18,21 +12,21 @@ var (
 )
 
 func init() {
-	httpc := *http.DefaultClient
-	httpc.Timeout = time.Second * 2
-	sess, err := session.NewSession(
-		&aws.Config{
-			Region:      aws.String("ap-south-1"),
-			Credentials: credentials.NewStaticCredentials(conf.D.AWSKeyId, conf.D.AWSSecretKey, ""),
-			HTTPClient:  &httpc,
-		},
-	)
-	if err != nil {
-		panic(err)
-	}
-
-	// s3 init
-	s3c = s3.New(sess)
+	//httpc := *http.DefaultClient
+	//httpc.Timeout = time.Second * 2
+	//sess, err := session.NewSession(
+	//	&aws.Config{
+	//		Region:      aws.String("ap-south-1"),
+	//		Credentials: credentials.NewStaticCredentials(conf.D.AWSKeyId, conf.D.AWSSecretKey, ""),
+	//		HTTPClient:  &httpc,
+	//	},
+	//)
+	//if err != nil {
+	//	panic(err)
+	//}
+	//
+	//// s3 init
+	//s3c = s3.New(sess)
 }
 
 func AwsS3GetFileList(bkt, prefix string) ([]string, error) {
